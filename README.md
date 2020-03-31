@@ -13,19 +13,13 @@ fast.
 
 You may work in a group of up to two people. Any clarifications and
 revisions to the assignment will be posted on the course Moodle.
+You must each have your own repository and hand in your own solution.
 
 # Hand Out Instructions
 
-Download the `malloclab-handout.tar` file from the Moodle assignment page.
+Accept the Malloc Lab invitation from Github Classroom.
 
-Start by copying `malloclab-handout.tar` to a directory
-in which you plan to do your work.  Then give the command:
-```
-tar xvf malloclab-handout.tar
-```
-This will cause a number of files
-to be unpacked into the directory.  The only file you will be
-modifying and handing in is `mm.c`.  The `mdriver.c` program
+he only file you will be modifying is `mm.c`.  The `mdriver.c` program
 is a driver program that allows you to evaluate the performance of
 your solution. Use the command `make` to generate the driver code
 and run it with the command `./mdriver -V`. (The `-V` flag
@@ -36,7 +30,7 @@ into which you should insert the requested identifying information
 about the one or two individuals comprising your programming team.
 **Do this right away so you don't forget.**
 
-When you have completed the lab, you will hand in only one file (`mm.c`), which contains your solution.
+When you have completed the lab, you will be graded on the version of the lab in Git at the due date.
 
 # How to Work on the Lab
 
@@ -210,9 +204,9 @@ You'll be evaluated by having a functioning `malloc`.
 The driver program summarizes the performance of your
 allocator by computing a *performance index*, $P$, which is a
 weighted sum of the space utilization and throughput
-\\(
+$$
 P = w{U} + (1-w) \min\left(1, \frac{T}{T_{libc}}\right) 
-\\)
+$$
 where $U$ is your space utilization, $T$ is your throughput, and
 $T_{libc}$ is the estimated throughput of `libc` malloc on your
 system on the default traces. The value for $T_{libc}$ is a
@@ -252,9 +246,9 @@ You can earn up to 10\% extra credit based on the score (i.e. a maximum score of
 
 # Handin Instructions
 
-You will handin a zip file containing a valid mm.c, Makefile and other files
+You must commit your git repo containing a valid `mm.c`, `Makefile` and other files
 needed to automatically build your program. You labs will be run by the TA's
-on the perf machine and grades recorded using the grading script.
+on the evaluation machine and grades recorded using the grading script.
 
 *You must indicate the origin of any code your use or borrow from other
 people or sources. Failure to properly attribute the origin of code you
