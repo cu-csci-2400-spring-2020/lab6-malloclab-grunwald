@@ -36,15 +36,15 @@
  ********************************************************/
 team_t team = {
   /* Team name */
-  "",
+  "foo",
   /* First member's full name */
-  "",
+  "foo",
   /* First member's email address */
-  "",
+  "foo",
   /* Second member's full name (leave blank if none) */
-  "",
+  "foo",
   /* Second member's email address (leave blank if none) */
-  ""
+  "foo"
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -171,6 +171,8 @@ static void *find_fit(uint32_t asize)
 //
 void mm_free(void *bp)
 {
+	fprintf(stderr,"free this\n");
+	exit(0);
   //
   // You need to provide this
   //
@@ -192,7 +194,9 @@ void *mm_malloc(uint32_t size)
   //
   // You need to provide this
   //
-  fprintf(stderr,"This is implicit\n");
+  //
+  fprintf(stderr,"You suck *^%(_*^%&\n");
+  exit(1);
   return NULL;
 } 
 
