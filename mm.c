@@ -171,6 +171,8 @@ static void *find_fit(uint32_t asize)
 //
 void mm_free(void *bp)
 {
+	fprintf(stderr,"free this\n");
+	exit(0);
   //
   // You need to provide this
   //
