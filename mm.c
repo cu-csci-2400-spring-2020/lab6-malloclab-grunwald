@@ -36,15 +36,15 @@
  ********************************************************/
 team_t team = {
   /* Team name */
-  "",
+  "foo",
   /* First member's full name */
-  "",
+  "foo",
   /* First member's email address */
-  "",
+  "foo",
   /* Second member's full name (leave blank if none) */
-  "",
+  "foo",
   /* Second member's email address (leave blank if none) */
-  ""
+  "foo"
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -192,6 +192,9 @@ void *mm_malloc(uint32_t size)
   //
   // You need to provide this
   //
+  //
+  fprintf(stderr,"You suck *^%(_*^%&\n");
+  exit(1);
   return NULL;
 } 
 
