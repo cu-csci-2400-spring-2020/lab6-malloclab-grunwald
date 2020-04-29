@@ -192,6 +192,7 @@ void *mm_malloc(uint32_t size)
   //
   // You need to provide this
   //
+  fprintf(stderr,"This is implicit\n");
   return NULL;
 } 
 
